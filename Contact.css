@@ -1,0 +1,375 @@
+.wrapper{
+  justify-content: center;
+  display: flex;
+  margin-bottom: 5rem;
+}
+
+.error{
+  color: red;
+  display: block;
+  font-size: smaller;
+
+}
+
+
+
+ .form-header, .form-par{
+ justify-content: center;
+ display: flex;
+ }
+
+ .form-header{
+  font-size: 2.5rem;
+  margin-top: 2rem;
+ }
+
+ .form-par{
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+ }
+
+.name-input, .email-input, .phone-input, textarea{
+  width: 35rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  height: 2.7em;
+  border: none;
+  padding: 1rem;
+  background-color: rgb(231, 237, 242);
+  
+}
+
+:focus::-webkit-input-placeholder{
+color: rgba(0, 0, 0, 0.2);
+}
+
+textarea:focus, input:focus, textarea:focus{
+  outline: none;
+  background-color:  rgb(238, 241, 244);
+  color: rgba(0, 0, 0, 1);
+}
+
+
+
+textarea:hover, .name-input:hover, .phone-input:hover, .email-input:hover{
+
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
+  
+}
+
+.radio{
+  margin: 0.2rem;
+  display: flex;
+}
+
+ .radio-container, .checkbox-container {
+  float: left;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  
+}
+
+
+
+
+.radio-legend, .checkbox-legend{
+  font-size: 1rem;
+  text-align: center;
+  display: flex;
+  padding-left: 10%;
+}
+
+.radio-label, .checkbox-label {
+  font-size: 0.8rem;
+  width: 18rem;
+  padding: 0.3rem;
+  text-align: left;
+  padding-left: 10%;
+  display: flex;
+}
+
+.radio-input, .checkbox-input {
+ display: flex;
+ float: left;
+ margin-right: 1em;
+ 
+}
+
+textarea{
+  width: 35rem;
+  height: 10rem;
+  resize: none;
+
+}
+
+button{
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  border: none;
+  color: aliceblue;
+  background-color: #38424d;
+}
+
+button:hover{
+transform: scale(1.1);
+box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+.button{
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+
+/* Styles for smaller screens */
+@media (max-width: 700px) {
+
+  .name-input, .email-input, .phone-input, textarea{
+    width: 100%;
+    height: 2.7em;
+    border: none;
+    margin-top: 0;
+    margin-bottom: 0;
+   
+  }
+
+  textarea{
+  
+    height: 10rem;
+    resize: none;
+  }
+
+  .form-header{
+    font-size: 2rem;
+    margin-top: 4rem;
+   }
+  
+   .form-par{
+    font-size: 0.8rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+   }
+  
+   .label-container{
+
+    padding: -1rem;
+   }
+
+
+   .radio-container, .checkbox-container {
+    float: left;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 2rem;
+    width: 40%;
+    
+  }
+
+  .radio-legend, .checkbox-legend{
+    font-size: .8rem;
+    text-align: left;
+    display: flex;
+    
+  }
+  
+  .radio-label, .checkbox-label {
+    font-size: 0.6rem;
+    width: 18rem;
+    padding: 0.3rem;
+    text-align: left;
+    padding-left: 15%;
+    
+  }
+  
+  .radio-input, .checkbox-input {
+   width: 1rem;
+   height: 1rem;
+   margin-left: 0;
+   display: flex;
+   float: left;
+   margin-right: 1em;
+   
+  }
+}
+
+
+
+
+
+
+  #locations {
+    
+  background-color: #38424d;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: .9rem;
+  
+}
+
+
+  #locations h2 {
+    font-size: 1rem;
+  }
+  
+  .get-directions {
+    background-color: #ffffff;
+    padding: 7px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: larger;
+   
+  }
+
+  .get-directions, .location-card{
+
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem;
+  align-items: center;
+
+  }
+
+  
+  .get-directions a {
+    color: #38424d;
+    text-decoration: none;
+  }
+  
+  .get-directions:hover {
+    background-color: #ffffff;
+    text-decoration: none;
+   
+  }
+  .get-directions a:hover {
+    color: #38424d;
+    text-decoration: none;
+  }
+  
+  
+
+  #locations h6 {
+    font-size: .9rem;
+  }
+  
+  .country-container {
+    max-width: 50rem;
+    
+  }
+  
+  .country-group {
+    margin-bottom: 1;
+    
+  }
+
+  
+  
+  .location-info {
+   display: flex;
+  
+    flex-wrap: nowrap ;  /* Prevents wrapping */
+    gap: 1rem;  /* Adds a gap between flex items */
+    
+  }
+  
+  .location-card, .location-map {
+    display: flex;
+    padding: 1rem;  /* Reduced padding */
+    border-radius: 10px; 
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin: 1.7rem;
+    
+  }
+
+  .location-card {
+   height: 16rem;
+   padding: 1rem;
+    background-color: #48525d;
+    color: #ffffff;
+    
+  }
+
+   br{
+    display: block;
+    margin: 0.5rem;
+    content: "";
+   }
+ 
+  
+  .location-map {
+    display: flex;
+    padding: 0;
+    background-color: #ffffff;
+    height: 16rem;
+    align-content: center;
+  }
+  
+  .location-map iframe {
+   
+    width: 25rem;
+    height: 16rem;
+    border-radius: 10px;
+    border: none;  /* Removes any default border */
+  }
+  
+  /* Styles for smaller screens */
+@media (max-width: 700px) {
+
+  body, html{
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .location-map iframe {
+    
+    width: 8rem;
+    height: 13rem;
+    
+  }
+
+  #locations h6{
+    font-size: .7rem;
+  }
+
+  .location-map {
+    
+    height: 12rem;
+    
+  }
+  .location-card {
+    height: 13rem;
+    width: 12rem;
+    }
+
+    br {
+    margin: 0.3rem;
+    
+    }
+
+    .country-container {
+      max-width: 30rem;
+    }
+
+    .location-info {
+      
+     gap: 0rem;  /* Adds a gap between flex items */
+       
+     }
+  
+  .get-directions{
+    font-size: .9rem;
+    margin: .9rem;
+  }
+  .location-card, .location-map {
+
+    margin: 1rem;
+  }
+  
+}

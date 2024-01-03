@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cambridge Lead</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Reliable educational consultancy based in London">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.cambridgelead.com">
+  
+  <!-- Open Graph / Facebook Meta Tags -->
+  <meta property="og:title" content="Cambridge Lead - Your Guide to Educational Success">
+  <meta property="og:description" content="Reliable educational consultancy based in London">
+  <meta property="og:image" content="https://www.cambridgelead.com/path-to-your-image.jpg">
+  <meta property="og:url" content="https://www.cambridgelead.com">
+  <meta property="og:type" content="website">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cambridge Lead - Your Guide to Educational Success">
+  <meta name="twitter:description" content="Reliable educational consultancy based in London">
+  <meta name="twitter:image" content="https://www.cambridgelead.com/path-to-your-image.jpg">
+  
+  <!-- Responsive Meta Tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <!-- CSS Links -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="Contact.css">
+  
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+
+  <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
+ 
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="DALL·E 2023-11-07 13.19.42 - Design a logo for 'Cambridge Lead' that is elegant and minimalistic. The logo should feature the words 'Cambridge Lead' in a sophisticated serif font,.png">
+  
+  <!-- JavaScript and Frameworks -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+  <script src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+  
+  <!-- Mavo for data-driven web apps -->
+  <link rel="stylesheet" href="https://get.mavo.io/mavo.css">
+  <script src="https://get.mavo.io/mavo.js"></script>
+
+  <!-- Your Custom Scripts -->
+  <script src="script.js"></script>
+
+
+
+
+</head>
+
+<body>
+
+  
+ <!-- end about -->
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<nav class="navbar navbar-expand-lg navbar-light custom-navbar-bg custom-navbar">
+  <a class="navbar-brand" href="index.html" style="color: white;">Cambridge Lead</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="Contact.html">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Blogs.html">Blog-highlights</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Funding.html">Funding</a>
+      </li>
+     
+      <li class="nav-item">
+        <a class="nav-link" href="admissions.html">Admissions</a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About us</a>
+      </li>
+    </ul>
+
+  </div>
+</nav>
+
+
+<section id="contact" class="wrapper">
+  <div class="main-container">
+    <h2 class="form-header">Contact Us</h2>
+    <p class="form-par">Getting in touch with us is easy and we're always here to help...</p>
+    <form id="contact-form"   action="#" class="" onsubmit="return validateForm()">
+     <div class="container">
+      <div class="label-container">
+        <label for="name" class="name"></label>
+        <input type="text" id="name" name="name" placeholder="Full Name" class="name-input">
+        <span id="nameError" class="error"></span>
+      </div>
+      <div class="label-container">
+        <label for="email" class=""></label>
+        <input type="email" id="email" name="email" placeholder="Your Email" class="email-input">
+        <span id="emailError" class="error"></span>
+      </div>
+      <div class="label-container">
+        <label for="phone" class=""></label>
+        <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" class="phone-input">
+        <span id="phoneError" class="error"></span>
+      </div>
+
+      <fieldset class="radio-container">
+        <legend class="radio-legend">Preferred Contact Method:</legend>
+        
+        <div class="radio">
+          <label for="contactEmail" class="radio-label">
+            <input type="radio" id="contactEmail" name="contactMethod" value="Email" class="radio-input">
+            <span>Email</span>
+          </label>
+        </div>
+        <div class="radio">
+          <label for="contactPhone" class="radio-label">
+            <input type="radio" id="contactPhone" name="contactMethod" value="Phone" class="radio-input">
+            <span>Phone</span>
+          </label>
+        </div>
+        <span id="contactMethodError" class="error"></span>
+      </fieldset>
+
+
+      <fieldset class="checkbox-container">
+        <legend class="checkbox-legend">Services Interested:</legend>
+        
+        <div class="checkbox">
+          <label for="service1" class="checkbox-label">
+            <input type="checkbox" id="service1" name="service" value="english-tests" class="checkbox-input">
+            <span>English language Test</span>
+          </label>
+          
+        </div>
+        <div class="checkbox">
+          <label for="service2" class="checkbox-label">
+            <input type="checkbox" id="service2" name="service" value="University Admissions" class="checkbox-input">
+            <span>University Admissions</span>
+          </label>
+          
+        </div>
+        <div class="checkbox">
+          <label for="service3" class="checkbox-label">
+          <input type="checkbox" id="service3" name="service" value="Graphic Design" class="checkbox-input">
+          <span>Funding Support</span>
+        </label>
+
+           </div>
+           <span id="servicesError" class="error"></span>
+      </fieldset>
+      
+      <div class="">
+        <label for="message" class=""></label>
+        <textarea id="message" name="textarea" placeholder="Your Message" rows="4"></textarea>
+        <span id="messageError" class="error"></span>
+      </div>
+      <div class="button">
+        <button type="submit" class="">
+          Send
+        </button>
+      </div>
+    </form>
+
+   
+  </div>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+    <section id="locations">
+      
+      <div class="country-container">
+        <div class="country-group uk">
+         
+          <div class="location-info">
+            <div class="location-card">
+              <h6>London, Peoples Mission Hall</h6>
+              <h6>Aldgate, Whitechapel</h6>
+              <h6>Post code: E1 1HH</h6>
+              <br>
+              <h6>Operating Hours: 9am - 5pm</h6>
+              <br>
+              <h6>Contact: +44 20 7946 0958</h6>
+              <button class="get-directions"><a href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9931.213199468217!2d-0.067419!3d51.5168246!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761d2334fd8f09%3A0x5449a31e82ae11e7!2sx%2Bwhy%2C%20People&#39;s%20Mission%20Hall!5e0!3m2!1sen!2suk!4v1696855428027!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" target="_blank">Get Directions</a></button>
+            </div>
+            <div class="location-map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9931.213199468217!2d-0.067419!3d51.5168246!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761d2334fd8f09%3A0x5449a31e82ae11e7!2sx%2Bwhy%2C%20People&#39;s%20Mission%20Hall!5e0!3m2!1sen!2suk!4v1696855428027!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+        <!-- ... other countries ... -->
+      </div>
+    </section>
+    
+    
+    <footer>
+      <div class="footer-container">
+        <div class="newsletter">
+          <h3>Subscribe to Our Newsletter</h3>
+          <form id="newsletter-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+        <div class="quick-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    
+  </div>
+    <script src="script.js"></script>
+    <script src="server.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
